@@ -1,0 +1,3 @@
+2021-04-02 19:06:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+select users0_.id as id1_0_, users0_.name as name2_0_, users0_.password as password3_0_, users0_.time_stamp as time_sta4_0_, users0_.token as token5_0_, users0_.username as username6_0_ from users users0_ [42102-200]

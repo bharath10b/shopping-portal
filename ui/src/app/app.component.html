@@ -1,0 +1,25 @@
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentuser">
+  <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="/">Home</a>
+  </div>
+</nav>
+
+<!-- main app container -->
+<div class="jumbotron">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-6 offset-sm-3">
+              <router-outlet></router-outlet>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- <app-top-bar></app-top-bar>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div> -->

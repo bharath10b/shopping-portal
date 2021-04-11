@@ -1,0 +1,78 @@
+package com.example.demo.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class Users {
+    /*@Id
+    @Column
+    Integer id;*/
+
+    @Column
+    String name;
+
+    @Column
+    String password;
+
+    /*@Column
+    String token;*/
+
+    @Id
+    @Column
+    String username;
+
+    /*@Column
+    String time_stamp;*/
+
+    /*public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }*/
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    /*public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }*/
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    /*public String getTimestamp() {
+        return time_stamp;
+    }
+
+    public void setTimestamp(String timestamp) {
+        this.time_stamp = timestamp;
+    }*/
+}

@@ -1,0 +1,33 @@
+<h2>Login</h2>
+<form [formGroup]="loginForm" (ngSubmit)="loginForm.valid && sendLogin()">
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input formControlName="username" type="text" placeholder="Enter Username">
+    </div>
+    
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input formControlName="password" type="password" placeholder="Enter Password">
+    </div>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+
+<!-- <form (ngSubmit)="onSubmit(formdata)" #formdata>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" (ngModel)="username" class="form-control"  />
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" (ngModel)="password" class="form-control"  />
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary">
+            <span ></span>
+            Login
+        </button>
+        <a routerLink="/register" class="btn btn-link">Register</a>
+    </div>
+</form> -->
